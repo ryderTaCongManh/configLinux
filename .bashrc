@@ -127,3 +127,20 @@ alias ttyUSB2='sudo picocom -b 115200 /dev/ttyUSB2'
 export PATH=/opt/angstrom/usr/local/angstrom/arm/bin:$PATH
 export PATH=/opt/eldk-5.5/armv5te/sysroots/i686-eldk-linux/usr/bin/armv5te-linux-gnueabi:$PATH
 
+###################################################
+#	     HERE ARE DEFINE FUNCTION		  #
+###################################################
+
+crossBB (){
+export ARCH=arm
+export CROSS_COMPILE=arm-angstrom-linux-gnueabi
+}
+
+crossEldk5.5 (){
+export ARCH=arm
+export CROSS_COMPILE=armv5te-linux-gnueabi
+}
+
+
+
+
